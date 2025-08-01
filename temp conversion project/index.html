@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        form{
+            text-align: center;
+            background-color: white;
+            max-width: 700px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 5px 5px 15px;
+        }
+        h2{
+            color: #0084ffec;
+        }
+        #mytextbox{
+            height: 30px;
+        }
+        button{
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(164, 41, 41);
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <h2>
+        Temperature conversion program
+    </h2>
+    <input id="mytextbox" type="number" value="0">
+    <br>
+    <input id="tofahrenheit" type="radio" name = "conversion">
+    <label for="tofahrenheit">Celsius to Fahrenheit</label>
+    <br>
+    <input id="tocelsius" type="radio" name = "conversion">
+    <label for="tocelsius">Fahrenheit to Celsius</label>
+    <br>
+    <br>
+    <button type="button" onclick="convert()">Submit</button>
+    <p id="myresult"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
