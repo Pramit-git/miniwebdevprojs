@@ -27,8 +27,8 @@ document.addEventListener("keydown", event =>{
 document.addEventListener("keydown",event =>{
     myBox.textContent = "😘";
     myBox.style.backgroundColor = "yellow";
-})
+});
 document.addEventListener("keyup",event =>{
     myBox.textContent = "😊";
     myBox.style.backgroundColor = "aqua";
-})
+});
